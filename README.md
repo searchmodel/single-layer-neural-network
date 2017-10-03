@@ -1,3 +1,3 @@
 # single-layer-neural-network
 
-# 2017Äê10ÔÂ3ÈÕ  perceptron
+# 2017-10-3 perceptron
