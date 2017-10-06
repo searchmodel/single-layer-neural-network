@@ -8,13 +8,13 @@ import java.io.IOException;
 import java.util.ArrayList;
 
 /**
- * 1958,Rosenblatt
- * 这是一个单层感知器（有任何疑问请发送邮件进行交流）
+ * 1962,Bernard Widrow & Marcian Hoff
+ * 这是一个线性感知器（有任何疑问请发送邮件进行交流）
  * @author Bin Xu
  * 			：xubin5@jd.com
  *
  */
-public class Perceptron {
+public class LMS {
 	private static final int T = 100; // 最大迭代次数
 
 	/**
@@ -62,8 +62,8 @@ public class Perceptron {
 
 			}
 
-			// 符号函数 handlimts
-			Double oj = (WX + b) >= 0 ? 1.0 : -1.0;
+			// 符号函数 purelin
+			Double oj = (WX + b);
 			// 期望输出
 			Double dj = targetData.get(j);
 			// 正确分类不调整权值
